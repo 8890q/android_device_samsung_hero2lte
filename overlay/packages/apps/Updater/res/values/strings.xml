@@ -21,6 +21,6 @@
           {type} - Build type
           {incr} - Incremental version
     -->
-    <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/ivanmeler/ota_provider/master/19.1/hero2lte.json</string>
-    <string name="menu_changelog_url" translatable="false">https://ivanmeler.github.io/changes/hero2lte.html</string>
+    <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/ivanmeler/ota_provider/master/20.0/hero2lte.json</string>
+    <string name="menu_changelog_url" translatable="false">https://ivanmeler.github.io/changes/hero2lte-20.html</string>
 </resources>
