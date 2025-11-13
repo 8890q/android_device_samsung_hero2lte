@@ -28,7 +28,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 TARGET_SEC_FP_USES_PERCENTAGE_SAMPLES := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_hero2lte
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_hero2lte)
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/universal8890
