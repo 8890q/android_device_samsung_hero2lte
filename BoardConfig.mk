@@ -36,7 +36,6 @@ TARGET_KERNEL_CONFIG := exynos8890-hero2lte_defconfig
 
 # Shims
 TARGET_LD_SHIM_LIBS += \
-    /vendor/lib/libbauthserver.so|/vendor/lib/libbauthtzcommon_shim.so \
     /vendor/lib64/libbauthserver.so|/vendor/lib64/libbauthtzcommon_shim.so
 
 # Soong namespaces
