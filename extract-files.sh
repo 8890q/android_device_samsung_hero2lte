@@ -64,4 +64,7 @@ BLOB_ROOT="$ANDROID_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 "${PATCHELF}" --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib/libMcClient.so
 "${PATCHELF}" --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $BLOB_ROOT/vendor/lib64/libMcClient.so
 
+# Shims
+"${PATCHELF}" --add-needed libbauthtzcommon_shim.so $BLOB_ROOT/vendor/lib64/libbauthserver.so
+
 "${MY_DIR}/setup-makefiles.sh"

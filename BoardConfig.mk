@@ -34,10 +34,6 @@ $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_hero2lt
 TARGET_KERNEL_SOURCE := kernel/samsung/universal8890
 TARGET_KERNEL_CONFIG := exynos8890-hero2lte_defconfig
 
-# Shims
-TARGET_LD_SHIM_LIBS += \
-    /vendor/lib64/libbauthserver.so|/vendor/lib64/libbauthtzcommon_shim.so
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
