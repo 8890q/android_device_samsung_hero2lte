@@ -18,14 +18,13 @@ include device/samsung/universal8890-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/hero2lte
 
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := hero2ltebmc,hero2lteskt,hero2ltektt,hero2ltelgt,hero2ltexx,hero2lte
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
-
-# Fingerprint
-TARGET_SEC_FP_USES_PERCENTAGE_SAMPLES := true
 
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_hero2lte)

@@ -1,0 +1,4 @@
+# Fingerprint
+ro.vendor.fingerprint.type=home
+ro.vendor.fingerprint.max_enrollments=4
+ro.vendor.fingerprint.uses_percentage_samples=true
