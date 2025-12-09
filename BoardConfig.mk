@@ -23,9 +23,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Assert
 TARGET_OTA_ASSERT_DEVICE := hero2ltebmc,hero2lteskt,hero2ltektt,hero2ltelgt,hero2ltexx,hero2lte
 
-# Bluetooth
-$(call soong_config_set,brcm_libbt,bdroid_buildcfg_include_dir,$(DEVICE_PATH)/bluetooth)
-
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_hero2lte)
 
